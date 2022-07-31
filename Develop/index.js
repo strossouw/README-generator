@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const generateReadme = require('./utils/generateReadme');
 const inquirer = require('inquirer');
+const fs = require('fs');
 
 
 // TODO: Create an array of questions for user input
@@ -123,15 +124,37 @@ const promptUser = () => {
     }
   },
 
+])
 
-])};
+
+};
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+
+const writeFile = fileContent => {
+  return new Promise((resolve, reject) => {
+    fs.writeFile('./output/README.md', fileContent, err => {
+      if (err) {
+        reject(err);
+        return;
+      }
+
+      resolve({
+        ok: true,
+        message: 'File created!'
+      });
+    });
+  });
+};
 
 // TODO: Create a function to initialize app
-function init() {}
+
+promptUser()
+  .then(portfolioData => {
+    return generateReadme (portfolioData);
+  })
+
 
 // Function call to initialize app
 init();
