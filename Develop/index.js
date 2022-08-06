@@ -1,12 +1,12 @@
 // TODO: Include packages needed for this application
-const generateReadme = require('./utils/generateReadme');
+const generateReadme = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
 
 
 // TODO: Create an array of questions for user input
-const promptUser = () => {
-  return inquirer.prompt([
+
+const questions = [
     {
       type: 'input',
       name: 'title',
@@ -22,7 +22,7 @@ const promptUser = () => {
     },
 
   {
-    type: 'editor',
+    type: 'input',
     name: 'description',
     message: `Describe the project:`,
     validate: descriptionInput => {
@@ -36,7 +36,7 @@ const promptUser = () => {
     }
   },
   {
-    type: 'editor',
+    type: 'input',
     name: 'install',
     message: "Enter the installation instructions for the application:",
     validate: installInput => {
@@ -50,7 +50,7 @@ const promptUser = () => {
     }
   },
   {
-    type: 'editor',
+    type: 'input',
     name: 'usage',
     message: "How do you use your application? Enter the instructions here:",
     validate: useInput => {
@@ -64,7 +64,7 @@ const promptUser = () => {
     }
   },
   {
-    type: 'editor',
+    type: 'input',
     name: 'contribute',
     message: "How can other contribute your application? Enter the instructions here:",
     validate: contributeInput => {
@@ -78,7 +78,7 @@ const promptUser = () => {
     }
   },
   {
-    type: 'editor',
+    type: 'input',
     name: 'test',
     message: "Are there any test instructions? Enter the instructions here:",
     validate: testInput => {
@@ -124,37 +124,49 @@ const promptUser = () => {
     }
   },
 
-])
+];
 
 
-};
+//call the questions
+const promptUser = () => {
+  return inquirer.prompt(questions);
+}
 
 
 // TODO: Create a function to write README file
 
-const writeFile = fileContent => {
+function writeToFile(data) {
   return new Promise((resolve, reject) => {
-    fs.writeFile('./output/README.md', fileContent, err => {
-      if (err) {
-        reject(err);
-        return;
-      }
-
-      resolve({
-        ok: true,
-        message: 'File created!'
-      });
-    });
-  });
-};
-
-// TODO: Create a function to initialize app
-
-promptUser()
-  .then(portfolioData => {
-    return generateReadme (portfolioData);
+      fs.writeFile('./output/README.md', data, err => {
+          if (err) {
+              reject(err);
+              return;
+          }
+          resolve({
+              ok: true,
+              message: 'Readme file created!'
+          })
+      })
   })
+}
 
+// Function to initialize app
 
-// Function call to initialize app
+function init() {
+  promptUser()
+      .then(questions => {
+          return generateReadme(questions);
+      })
+      .then(formattedPage => {
+          return writeToFile(formattedPage);
+      })
+      .then(writeFileResponse => {
+          console.log(writeFileResponse);
+      })
+      .catch(err => {
+          console.log(err);
+      })
+}
+
+//call to function
 init();
