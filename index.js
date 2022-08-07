@@ -3,8 +3,8 @@ const generateReadme = require('./utils/generateMarkdown');
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-
 // TODO: Create an array of questions for user input
+
 
 const questions = [
     {
@@ -31,6 +31,20 @@ const questions = [
       }
       else{
         console.log("Please enter a project description");
+        return false;
+      }
+    }
+  },
+  {
+    type: 'input',
+    name: 'tech',
+    message: `Input the technology used:`,
+    validate: techInput => {
+      if(techInput){
+        return true;
+      }
+      else{
+        console.log("Please select the technology use");
         return false;
       }
     }
@@ -95,11 +109,11 @@ const questions = [
     type: 'list',
     name: 'license',
     message: 'What License is covered under the application?',
-    choices: ['MIT', 'LGPL 3.0', 'MPL 2.0', 'AGPL 3.0', 'GPL 3.0', 'Apache 2.0', 'Unlicense'],
+    choices: ['MIT', 'LGPL 3.0', 'MPL 2.0', 'AGPL 3.0', 'GPL 3.0', 'Apache 2.0', 'Unlicense', 'None'],
   },
   {
     type: 'input',
-    name: 'gitHub',
+    name: 'github',
     message: "What is your Github user name? (Required)",
     validate: nameInput => {
       if (nameInput) {
@@ -123,6 +137,12 @@ const questions = [
       }
     }
   },
+      {
+        type: 'list',
+        message: 'Do you want a license document? ',
+        name: 'licenseDoc',
+        choices: ['Yes', 'No']
+    },
 
 ];
 
@@ -148,7 +168,8 @@ function writeToFile(data) {
           })
       })
   })
-}
+};
+
 
 // Function to initialize app
 
@@ -166,7 +187,8 @@ function init() {
       .catch(err => {
           console.log(err);
       })
-}
+};
+
 
 //call to function
 init();
