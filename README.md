@@ -1,6 +1,9 @@
 # README Generator
 README Generator
 
+## GitHub Repository
+https://github.com/strossouw/README-generator
+
  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ##  Description
@@ -8,7 +11,7 @@ This application will generate a README.md file. The application will ask a seri
 The generated file will be stored in the output file in the project directory.
 
 
-##Table of Contents
+##  Table of Contents
 * [Technologies](#technologies)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -36,6 +39,8 @@ When all questions have been answered a console command will indicate that the R
 
 ![image](https://user-images.githubusercontent.com/105831699/188918821-0228abbd-45f3-403e-8dcf-76d02052bf9d.png)
 
+## Demo Video
+https://drive.google.com/file/d/1xFJ32PxhWdT6cOWAZ1ku_U1Ij0nFP1tq/view
 
 ## License
 This project was developed under the MIT license.
@@ -44,5 +49,6 @@ This project was developed under the MIT license.
 See my Github [GitHub](https://www.github.com/strossouw)  
 Email me  <srossouw@uwm.edu>
 
-https://drive.google.com/file/d/1xFJ32PxhWdT6cOWAZ1ku_U1Ij0nFP1tq/view
+## Demo Video
+
 
