@@ -1,14 +1,14 @@
-# Title
+# Project Title
 
 #  Project Title
-Title
+Project Title
 
  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ##  Description
-Enter the description
+I am dewscribing the project
 
-##Table of Contents
+##  Table of Contents
 * [Technologies](#technologies)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -18,24 +18,24 @@ Enter the description
 * [Questions](#questions)
   
 ## Technologies
-enter the technologies used. Node.js and inquirer
+I am listing the technology used
 
 
 ## Installation
-enter installation instruction
+If I had some installation instructions I would list those here. 
 
 ## Usage
-enter use instructions
+I would describe how to use the application that I am writing the README for in this section
 
 ## License
 This project was developed under the MIT license.
 
 ## Contributing
-Enter the instructions for how others can contribute
+I would list instructions here
 
 ## Tests
-No there are no test instructions
+I would put instructions here
 
 ## Questions  
-See my Github [GitHub](https://www.github.com/strossouw)  
-Email me  <srossouw@uwm.edu>
+See my Github [GitHub](https://www.github.com/username)  
+Email me  <emailaddress >
