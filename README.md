@@ -1,7 +1,7 @@
 # README Generator
 README Generator
 
-## GitHub Reposity
+## GitHub Repository
 https://github.com/strossouw/README-generator
 
  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
