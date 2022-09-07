@@ -14,10 +14,12 @@ This application will generate a README.md file . It will take a series of user 
 * [Questions](#questions)
   
 ## Technologies
-requires: node.js
+requires: 
+node.js 
+inquirer
 
 ## Installation
-To use this application the code needs to be downloaded from the GitHub Repository and node.js needs to be installed.  
+To use this application the code needs to be downloaded from the GitHub Repository. Then the node.js and inquirer npm packages need to be installed.  
 
 ## Usage
 The application runs from command line prompts. In the main file of the application in the terminal, run  node index 
