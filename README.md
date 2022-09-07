@@ -50,5 +50,5 @@ See my Github [GitHub](https://www.github.com/strossouw)
 Email me  <srossouw@uwm.edu>
 
 ## Demo Video
-
+https://github.com/strossouw/README-generator/blob/main/assets/README%20Demo.mp4
 
