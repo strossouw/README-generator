@@ -25,12 +25,15 @@ To use this application the code needs to be downloaded from the GitHub Reposito
 
 ## Usage
 The application runs from command line prompts. Open the terminal, once in the root file of the application, run the command “ node index “. 
+
 ![image](https://user-images.githubusercontent.com/105831699/188918542-6adec4e3-35a3-4199-8fe4-ed2504610cbd.png)
 
 This command will prompt a series of questions. After use has input a response to the question, press enter to advance to next question. 
+
 ![image](https://user-images.githubusercontent.com/105831699/188918758-5f0542c1-799e-448f-a509-9fee9c3e0ffa.png)
 
 When all questions have been answered a console command will indicate that the README.md file has been generated.
+
 ![image](https://user-images.githubusercontent.com/105831699/188918821-0228abbd-45f3-403e-8dcf-76d02052bf9d.png)
 
 
