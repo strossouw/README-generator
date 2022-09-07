@@ -37,7 +37,7 @@ ${renderLicenseBadge(data.license)}
 ##  Description
 ${data.description}
 
-##Table of Contents
+##  Table of Contents
 * [Technologies](#technologies)
 * [Installation](#installation)
 * [Usage](#usage)

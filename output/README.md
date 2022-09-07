@@ -1,31 +1,40 @@
-# README Generator
+# Title
 
 #  Project Title
-README Generator
+Title
 
  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ##  Description
-This application will generate a README.md file . It will take a series of user inputs and place them into the correct fields to generate  a professional README.md file.   The generated file will be stored in the output file i  in the directory.  
+Enter the description
 
 ##Table of Contents
 * [Technologies](#technologies)
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
+* [Contribution](#contributing)
+* [Tests](#tests)
 * [Questions](#questions)
   
 ## Technologies
-requires: node.js
+enter the technologies used. Node.js and inquirer
+
 
 ## Installation
-To use this application the code needs to be downloaded from the GitHub Repository and node.js needs to be installed.  
+enter installation instruction
 
 ## Usage
-The application runs from command line prompts. In the main file of the application in the terminal, run  node index 
+enter use instructions
 
 ## License
 This project was developed under the MIT license.
+
+## Contributing
+Enter the instructions for how others can contribute
+
+## Tests
+No there are no test instructions
 
 ## Questions  
 See my Github [GitHub](https://www.github.com/strossouw)  
