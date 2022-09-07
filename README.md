@@ -22,6 +22,9 @@ To use this application the code needs to be downloaded from the GitHub Reposito
 ## Usage
 The application runs from command line prompts. In the main file of the application in the terminal, run  node index 
 
+![image](https://user-images.githubusercontent.com/105831699/188912224-9343fefe-c0c6-4c26-b092-97d7bf575fed.png)
+
+
 ## License
 This project was developed under the MIT license.
 
